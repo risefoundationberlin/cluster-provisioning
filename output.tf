@@ -3,5 +3,5 @@ output "resource_group_name" {
 }
 
 output "kubernetes_cluster_name" {
-    value = azurerm_kubernetes_cluster.default.name
+    value = azurerm_kubernetes_cluster.rf-prod.name
 }

@@ -12,12 +12,12 @@ resource "azurerm_resource_group" "default" {
 }
 
 resource "azurerm_kubernetes_cluster" "rf-prod" {
-    name = "rise-aks"
+    name = "rf-prod"
     location = azurerm_resource_group.default.location
     resource_group_name = azurerm_resource_group.default.name
     dns_prefix = "rise-k8s"
 
-    default_node_pool = {
+    default_node_pool {
         name = "default"
         node_count = 2
         vm_size = "Standard_D2_v3"
