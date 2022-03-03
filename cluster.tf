@@ -36,6 +36,4 @@ resource "azurerm_kubernetes_cluster" "rf-prod" {
     tags = {
         environment = "Production"
     }
-
-
 }
