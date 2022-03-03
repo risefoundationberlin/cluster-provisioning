@@ -25,3 +25,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
+        env:
+          TF_VAR_appId: ${{ secrets.AZ_SP_APP_ID }}
+          TF_VAR_password: ${{ secrets.AZ_SP_PASS }}
