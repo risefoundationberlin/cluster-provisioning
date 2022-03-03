@@ -10,7 +10,7 @@ jobs:
 
     env:
       ARM_CLIENT_ID: ${{secrets.AZ_SP_APP_ID}}
-      ARM_CLIENT_SECRET: ${{secrets.TF_ARM_CLIENT_SECRET}}
+      ARM_CLIENT_SECRET: ${{secrets.AZ_SP_PASS}}
       ARM_SUBSCRIPTION_ID: ${{secrets.AZ_SUBS_ID}}
       ARM_TENANT_ID: ${{secrets.AZ_TENANT_ID}}
 
