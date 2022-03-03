@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "default" {
     name     = "dev-ops-rg"
-    location = "Germany North"
+    location = "Germany West Central"
 
     tags = {
         environment = "Production"
