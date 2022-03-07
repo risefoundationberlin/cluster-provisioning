@@ -4,8 +4,8 @@ provider "azurerm" {
 
 resource "azurerm_kubernetes_cluster" "rf-prod" {
     name = "rf-prod"
-    location = azurerm_resource_group.state-rg.location
-    resource_group_name = azurerm_resource_group.state-rg.name
+    location = "Germany West Central"
+    resource_group_name = "dev-ops-rg"
     dns_prefix = "rise-k8s"
 
     default_node_pool {
