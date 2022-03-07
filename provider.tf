@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "dev-ops-rg"
-    storage_account_name = "rfprodtfsa"
-    container_name       = "core-tfstate"
+    storage_account_name = "rfprodtf"
+    container_name       = "core-tf-state"
     key                  = "core.rf.tfstate"
   }
 
