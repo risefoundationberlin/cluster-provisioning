@@ -19,17 +19,12 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
-        
 
       - name: Terraform Init
         run: terraform init
-        with:
-          tf_actions_working_dir: "./terraform"
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        with:
-          tf_actions_working_dir: "./terraform"
         env:
           TF_VAR_appId: ${{ secrets.AZ_SP_APP_ID }}
           TF_VAR_password: ${{ secrets.AZ_SP_PASS }}
