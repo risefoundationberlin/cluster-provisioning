@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_kubernetes_cluster" "rf-prod" {
     name = "rf-production"
-    location = "West Europe"
+    location = "Germany West Central"
     resource_group_name = "dev-ops-rg"
     dns_prefix = "rise-k8s"
 
